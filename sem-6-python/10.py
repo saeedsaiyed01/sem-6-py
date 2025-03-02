@@ -1,11 +1,18 @@
-import time
+# write a py program to check number is palindrome or not
 
-wait_time = 1
-max_retries = 5
-attempts = 0
+n=int(input("Enter Number"))
 
-while attempts < max_retries:
-    print("Attempt", attempts + 1, "- wait time", wait_time, )
-    time.sleep(wait_time)
-    wait_time *= 2
-    attempts += 1
+number=n;
+rnumber=0;2
+
+while(n>0):
+    digit=n%10
+    rnumber=(rnumber*10)+digit
+    n=n//10
+
+if number ==rnumber:
+  
+  print("Palindrome")
+
+else:
+   print("Not palindrome")
